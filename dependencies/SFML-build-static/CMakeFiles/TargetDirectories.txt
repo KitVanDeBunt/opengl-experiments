@@ -1,0 +1,6 @@
+C:/Development/project/sfml/lib/SFML-build-static/src/SFML/Audio/CMakeFiles/sfml-audio.dir
+C:/Development/project/sfml/lib/SFML-build-static/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir
+C:/Development/project/sfml/lib/SFML-build-static/src/SFML/Main/CMakeFiles/sfml-main.dir
+C:/Development/project/sfml/lib/SFML-build-static/src/SFML/Network/CMakeFiles/sfml-network.dir
+C:/Development/project/sfml/lib/SFML-build-static/src/SFML/System/CMakeFiles/sfml-system.dir
+C:/Development/project/sfml/lib/SFML-build-static/src/SFML/Window/CMakeFiles/sfml-window.dir
