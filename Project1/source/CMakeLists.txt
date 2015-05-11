@@ -64,8 +64,8 @@ configure_file(
 include_directories("${PROJECT_BINARY_DIR}")
 
 # Define sources and executable
-set(EXECUTABLE_NAME "myproject")
-add_executable(${EXECUTABLE_NAME} main.cpp)
+set(PLANE_EXECUTABLE_NAME "PlaneProject")
+add_executable(${PLANE_EXECUTABLE_NAME} plane.cpp)
 
 
 # Detect and add SFML
@@ -80,11 +80,11 @@ endif()
 
 if(SFML_FOUND)
   include_directories(${SFML_INCLUDE_DIR})
-  target_link_libraries(${EXECUTABLE_NAME} ${SFML_LIBRARIES}  ${OPENGL_LIBRARIES})
+  target_link_libraries(${PLANE_EXECUTABLE_NAME} ${SFML_LIBRARIES}  ${OPENGL_LIBRARIES})
 endif()
 
 # Install target
-install(TARGETS ${EXECUTABLE_NAME} DESTINATION bin)
+install(TARGETS ${PLANE_EXECUTABLE_NAME} DESTINATION bin)
 
 
 # CPack packaging
@@ -94,7 +94,9 @@ set(CPACK_PACKAGE_VERSION_MAJOR "${myproject_VERSION_MAJOR}")
 set(CPACK_PACKAGE_VERSION_MINOR "${myproject_VERSION_MINOR}")
 include(CPack)
 
-
+if(SFML_FOUND)
+	add_subdirectory(projects)
+endif()
 
 
 

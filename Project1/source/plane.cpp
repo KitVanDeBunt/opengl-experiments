@@ -65,7 +65,7 @@ void gameLoop(){
 				
 				break;
 			case sf::Event::EventType::KeyPressed:
-				std::cout << "key pressed" << windowEvent.key.code << std::endl;
+				std::cout << "plane key pressed" << windowEvent.key.code << std::endl;
 				/*if (windowEvent.key.code == ){
 
 				}*/
