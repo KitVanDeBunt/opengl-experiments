@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Development\project\sfml\opengl-experiments\Projects\source\projects\OGLdev_3\main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Development\project\sfml\opengl-experiments\Projects\source\projects\OGLdev_3\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{45CBDBE7-00FC-45C3-824E-4733D0651EDD}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,4 @@
+add_subdirectory(HelloWorld)
+add_subdirectory(Engine)
+add_subdirectory(ModelLoading)
+add_subdirectory(OGLdev_3)

@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Development\project\sfml\opengl-experiments\Projects\source\projects\Engine\Engine\ComponentSprite.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Development\project\sfml\opengl-experiments\Projects\source\projects\Engine\Engine\ComponentTransform.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Development\project\sfml\opengl-experiments\Projects\source\projects\Engine\Engine\ComponentBase.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Development\project\sfml\opengl-experiments\Projects\source\projects\Engine\Engine\Engine.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Development\project\sfml\opengl-experiments\Projects\source\projects\Engine\Engine\Entity.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Development\project\sfml\opengl-experiments\Projects\source\projects\Engine\Engine\SystemBase.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Development\project\sfml\opengl-experiments\Projects\source\projects\Engine\Engine\SystemDisplay.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Development\project\sfml\opengl-experiments\Projects\source\projects\Engine\Engine\SystemInput.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Development\project\sfml\opengl-experiments\Projects\source\projects\Engine\Engine\Vector2.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Development\project\sfml\opengl-experiments\Projects\source\projects\Engine\Engine\Vector3.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Development\project\sfml\opengl-experiments\Projects\source\projects\Engine\main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\Development\project\sfml\opengl-experiments\Projects\source\projects\Engine\Engine\ComponentSprite.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Development\project\sfml\opengl-experiments\Projects\source\projects\Engine\Engine\ComponentTransform.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Development\project\sfml\opengl-experiments\Projects\source\projects\Engine\Engine\ComponentBase.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Development\project\sfml\opengl-experiments\Projects\source\projects\Engine\Engine\Engine.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Development\project\sfml\opengl-experiments\Projects\source\projects\Engine\Engine\Entity.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Development\project\sfml\opengl-experiments\Projects\source\projects\Engine\Engine\SystemBase.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Development\project\sfml\opengl-experiments\Projects\source\projects\Engine\Engine\SystemDisplay.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Development\project\sfml\opengl-experiments\Projects\source\projects\Engine\Engine\SystemInput.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Development\project\sfml\opengl-experiments\Projects\source\projects\Engine\Engine\Vector2.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Development\project\sfml\opengl-experiments\Projects\source\projects\Engine\Engine\Vector3.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Development\project\sfml\opengl-experiments\Projects\source\projects\Engine\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{45CBDBE7-00FC-45C3-824E-4733D0651EDD}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{BF57BFA1-8651-4DF3-B71F-EB57C2135152}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
