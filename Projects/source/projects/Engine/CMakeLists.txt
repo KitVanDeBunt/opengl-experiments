@@ -1,8 +1,7 @@
 
 set(SRCROOT ${PROJECT_SOURCE_DIR}/projects/Engine)
 
-# all source files
-
+# - engine source files
 set(SRCFILES ${SRCFILES} ${SRCROOT}/Engine/ComponentSprite.cpp)
 set(SRCFILES ${SRCFILES} ${SRCROOT}/Engine/ComponentSprite.h)
 
@@ -30,8 +29,20 @@ set(SRCFILES ${SRCFILES} ${SRCROOT}/Engine/SystemInput.h)
 set(SRCFILES ${SRCFILES} ${SRCROOT}/Engine/Vector2.cpp)
 set(SRCFILES ${SRCFILES} ${SRCROOT}/Engine/Vector2.h)
 
+set(SRCFILES ${SRCFILES} ${SRCROOT}/Engine/Utils/EngineTime.cpp)
+set(SRCFILES ${SRCFILES} ${SRCROOT}/Engine/Utils/EngineTime.h)
+
 set(SRCFILES ${SRCFILES} ${SRCROOT}/Engine/Vector3.cpp)
 set(SRCFILES ${SRCFILES} ${SRCROOT}/Engine/Vector3.h)
+
+set(SRCFILES ${SRCFILES} ${SRCROOT}/Engine/KECS.h)
+
+# - game source files
+set(SRCFILES ${SRCFILES} ${SRCROOT}/ComponentPlayer.cpp)
+set(SRCFILES ${SRCFILES} ${SRCROOT}/ComponentPlayer.h)
+
+set(SRCFILES ${SRCFILES} ${SRCROOT}/ComponentEnemy.cpp)
+set(SRCFILES ${SRCFILES} ${SRCROOT}/ComponentEnemy.h)
 
 set(SRCFILES ${SRCFILES} ${SRCROOT}/main.cpp)
 #set(SRCFILES ${SRCROOT}/main.h)

@@ -1,23 +1,21 @@
 #include <SFML/Window.hpp>
 
-#include "SystemInput.h"
+#include "KECS.h"
 
+namespace KECS{
+	SystemInput::SystemInput()
+	{
+	}
 
+	SystemInput::~SystemInput()
+	{
+	}
 
-SystemInput::SystemInput()
-{
+	void SystemInput::Init()
+	{
+	}
+
+	void SystemInput::Update()
+	{
+	}
 }
-
-
-SystemInput::~SystemInput()
-{
-}
-
-void SystemInput::Init(){
-
-}
-
-void SystemInput::Update(){
-
-}
-

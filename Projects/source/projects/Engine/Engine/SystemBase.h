@@ -1,23 +1,25 @@
+
+
 #ifndef SYSTEM_BASE_H
 #define SYSTEM_BASE_H
 
-//#include "Engine.h"
 #include "Entity.h"
 
-class SystemBase
-{
-public:
-	SystemBase();
-	~SystemBase();
+namespace KECS{
+	class Entity;
 
-	virtual void Update() = 0;
-	virtual void Init() = 0;
+	class SystemBase
+	{
+	public:
+		SystemBase();
+		~SystemBase();
 
-	Entity **entitys;
-	int *entityCount;
+		virtual void Update() = 0;
+		virtual void Init() = 0;
 
-//private:
-	//Engine &engine_ = 0;
-};
+		Entity ***entitys;
+		int *entityCount;
+	};
+}
 #endif
 

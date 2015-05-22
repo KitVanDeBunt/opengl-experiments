@@ -19,7 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGUID>{0AA6E235-4E71-47A7-8D56-A67B6DA16F24}</ProjectGUID>
+    <ProjectGUID>{C9C561F7-FAC5-4A65-89CD-AB3D294C599A}</ProjectGUID>
     <Keyword>Win32Proj</Keyword>
     <Platform>Win32</Platform>
     <ProjectName>ModelLoading</ProjectName>
@@ -322,7 +322,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="C:/Development/project/sfml/opengl-experiments/Projects/build-vs-2013/ZERO_CHECK.vcxproj">
-      <Project>DC7AA30A-968E-405A-9DB6-8335273F6050</Project>
+      <Project>12329108-E575-4265-B494-F736545974E4</Project>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

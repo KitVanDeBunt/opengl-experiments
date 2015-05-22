@@ -19,7 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGUID>{DBFAA35D-D66E-455B-A66C-CDBE330B1E7F}</ProjectGUID>
+    <ProjectGUID>{C04A6029-2A90-470D-B2FA-7258D1A9421C}</ProjectGUID>
     <Keyword>Win32Proj</Keyword>
     <Platform>Win32</Platform>
     <ProjectName>INSTALL</ProjectName>
@@ -208,7 +208,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="C:/Development/project/sfml/opengl-experiments/Projects/build-vs-2013/ALL_BUILD.vcxproj">
-      <Project>EABAB7F5-A811-4F79-A978-39BC20FB04A4</Project>
+      <Project>50B0A15B-4AC1-4D7A-94B5-33C20C0DDD66</Project>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

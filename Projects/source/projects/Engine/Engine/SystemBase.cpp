@@ -1,24 +1,24 @@
 #include "SystemBase.h"
-#include "Engine.h"
 
-SystemBase::SystemBase()
-{
+namespace KECS{
+	SystemBase::SystemBase()
+	{
+		//entitys = NULL;
+	}
 
+	SystemBase::~SystemBase()
+	{
+
+	}
+
+
+	void SystemBase::Init(){
+
+	};
+	/*
+	void SystemBase::Update()
+	{
+
+	}
+	*/
 }
-
-SystemBase::~SystemBase()
-{
-
-}
-
-/*
-void SystemBase::Init()
-{
-
-}
-
-void SystemBase::Update()
-{
-
-}
-*/

@@ -28,7 +28,16 @@
     <ClCompile Include="C:\Development\project\sfml\opengl-experiments\Projects\source\projects\Engine\Engine\Vector2.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="C:\Development\project\sfml\opengl-experiments\Projects\source\projects\Engine\Engine\Utils\EngineTime.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
     <ClCompile Include="C:\Development\project\sfml\opengl-experiments\Projects\source\projects\Engine\Engine\Vector3.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Development\project\sfml\opengl-experiments\Projects\source\projects\Engine\ComponentPlayer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Development\project\sfml\opengl-experiments\Projects\source\projects\Engine\ComponentEnemy.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="C:\Development\project\sfml\opengl-experiments\Projects\source\projects\Engine\main.cpp">
@@ -63,7 +72,19 @@
     <ClInclude Include="C:\Development\project\sfml\opengl-experiments\Projects\source\projects\Engine\Engine\Vector2.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="C:\Development\project\sfml\opengl-experiments\Projects\source\projects\Engine\Engine\Utils\EngineTime.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
     <ClInclude Include="C:\Development\project\sfml\opengl-experiments\Projects\source\projects\Engine\Engine\Vector3.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Development\project\sfml\opengl-experiments\Projects\source\projects\Engine\Engine\KECS.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Development\project\sfml\opengl-experiments\Projects\source\projects\Engine\ComponentPlayer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Development\project\sfml\opengl-experiments\Projects\source\projects\Engine\ComponentEnemy.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
@@ -72,10 +93,10 @@
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Source Files">
-      <UniqueIdentifier>{45CBDBE7-00FC-45C3-824E-4733D0651EDD}</UniqueIdentifier>
+      <UniqueIdentifier>{AFEA7C1C-3A9D-4283-B48C-AF0BC112750D}</UniqueIdentifier>
     </Filter>
     <Filter Include="Header Files">
-      <UniqueIdentifier>{BF57BFA1-8651-4DF3-B71F-EB57C2135152}</UniqueIdentifier>
+      <UniqueIdentifier>{8914A7A8-FC88-495F-9AE3-9E09C7098EB9}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>

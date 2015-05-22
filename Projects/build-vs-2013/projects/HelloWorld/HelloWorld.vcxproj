@@ -19,7 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGUID>{7DB2C855-BB11-48BA-81CE-F72A90C46F47}</ProjectGUID>
+    <ProjectGUID>{A0688F19-2D50-4FE4-9BAF-C9EDAB9EF187}</ProjectGUID>
     <Keyword>Win32Proj</Keyword>
     <Platform>Win32</Platform>
     <ProjectName>HelloWorld</ProjectName>
@@ -312,7 +312,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="C:/Development/project/sfml/opengl-experiments/Projects/build-vs-2013/ZERO_CHECK.vcxproj">
-      <Project>DC7AA30A-968E-405A-9DB6-8335273F6050</Project>
+      <Project>12329108-E575-4265-B494-F736545974E4</Project>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

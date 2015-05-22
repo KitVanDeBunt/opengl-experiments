@@ -1,51 +1,63 @@
 #include <iostream>
 #include <stdio.h>
 
-//#include "Engine.h"
-#include "Entity.h"
-#include "ComponentBase.h"
-//#include "SystemBase.h"
+#include "KECS.h"
 
 using namespace std;
 
-Entity::Entity()
-{
-	components = NULL;
-}
+namespace KECS{
 
-
-Entity::~Entity()
-{
-}
-
-void Entity::AddComponent(ComponentBase *newComponent)
-{
-	cout << components << endl;
-	if (components == NULL){
-		cout << "[Entity] First component added" << endl;
-		components = new ComponentBase*[1];
-		components[0] = newComponent;
-		componentCount = 1;
-	}
-	else
-	{
-		cout << "[Entity] Add component" << endl;
-		ComponentBase **temp = components;
-		components = new ComponentBase*[componentCount + 1];
-		for (int i = 0; i<componentCount; ++i){
-			components[i] = temp[i];
-		}
-		components[componentCount] = newComponent;
-		componentCount++;
-
-		//delete temp data
-		for (int i = 0; i<componentCount - 1; ++i){
-			//delete temp[i];
-		}
-		//delete temp
-		delete temp;
+	Entity::Entity(){
+		components = NULL;
 	}
 
-	cout << "[Entity] new component name:" << endl;
-	cout << "[Entity] component count:" << componentCount << endl;
+	Entity::~Entity(){
+	}
+
+	void Entity::AddComponent(ComponentBase *newComponent){
+		newComponent->AddToParent(this);
+		cout << components << endl;
+		if (components == NULL){
+			// cout << "[Entity] First component added" << endl;
+			components = new ComponentBase*[1];
+			components[0] = newComponent;
+			componentCount = 1;
+		}else{
+			// cout << "[Entity] Add component" << endl;
+			ComponentBase **temp = components;
+			components = new ComponentBase*[componentCount + 1];
+			for (int i = 0; i < componentCount; ++i){
+				components[i] = temp[i];
+			}
+			components[componentCount] = newComponent;
+			componentCount++;
+
+			// delete temp data
+			for (int i = 0; i < componentCount - 1; ++i){
+				//delete temp[i];
+			}
+			// delete temp
+			delete temp;
+		}
+		newComponent->Init();
+		// TODO cout << "[Entity] new component name:" << endl;
+		// cout << "[Entity] component count:" << componentCount << endl;
+	}
+
+	ComponentBase* Entity::GetComponent(std::string classID){
+		if (components != NULL){
+			for (int i = 0; i < componentCount; ++i){
+				if (components[i]->getComponentID() == classID){
+					return components[i];
+				}
+			}
+		}
+		return NULL;
+	}
+
+	void Entity::Update(){
+		for (int i = 0; i < componentCount; ++i){
+			components[i]->Update();
+		}
+	}
 }

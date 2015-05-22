@@ -1,11 +1,24 @@
-#include "ComponentBase.h"
+#include <iostream>
 
+#include "KECS.h"
+namespace KECS{
+	ComponentBase::ComponentBase(std::string id){
+		setComponentID(id);
+	}
 
-ComponentBase::ComponentBase()
-{
-}
+	ComponentBase::~ComponentBase(){
+		//_parentEntity = NULL;
+	}
 
+	void ComponentBase::AddToParent(Entity *parentEntity){
+		_parentEntity = parentEntity;
+	}
 
-ComponentBase::~ComponentBase()
-{
+	void ComponentBase::Init(){
+
+	}
+
+	void ComponentBase::Update(){
+
+	}
 }

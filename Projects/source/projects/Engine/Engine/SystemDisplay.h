@@ -6,24 +6,38 @@
 #include <SFML\OpenGL.hpp>
 
 #include "SystemBase.h"
+#include "ComponentSprite.h"
+#include "ComponentTransform.h"
 
-class SystemDisplay : public SystemBase
-{
-public:
-	SystemDisplay();
-	~SystemDisplay();
+namespace KECS{
 
-	virtual void Update()override;
-	virtual void Init()override;
+	class SystemDisplay : public SystemBase
+	{
+	public:
+		SystemDisplay();
+		~SystemDisplay();
 
-	bool pollEvent(sf::Event&);
+		virtual void Update()override;
+		virtual void Init()override;
 
-private:
-	sf::Window *window;
+		bool pollEvent(sf::Event&);
 
-	const int SCREEN_WIDTH = 1280;
-	const int SCREEN_HEIGHT = 720;
-	GLdouble fW, fH;
-};
+	private:
+		void DrawSprite(ComponentSprite*, ComponentTransform*);
+
+		sf::Window *window;
+
+		const int SCREEN_WIDTH = 1280;
+		const int SCREEN_HEIGHT = 720;
+		GLdouble fW, fH;
+
+		//loop variables
+		ComponentSprite *sprite;
+		ComponentTransform *transform;
+
+
+		Entity **entitysTemp;
+	};
+}
 #endif
 

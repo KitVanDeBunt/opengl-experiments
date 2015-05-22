@@ -3,13 +3,15 @@
 
 #include "SystemBase.h"
 
-class SystemInput: public SystemBase
-{
-public:
-	SystemInput();
-	~SystemInput();
+namespace KECS{
+	class SystemInput : public SystemBase
+	{
+	public:
+		SystemInput();
+		~SystemInput();
 
-	virtual void Update()override;
-	virtual void Init()override;
-};
+		virtual void Update()override;
+		virtual void Init()override;
+	};
+}
 #endif
