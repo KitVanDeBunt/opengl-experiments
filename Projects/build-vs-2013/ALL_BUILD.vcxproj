@@ -19,7 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGUID>{50B0A15B-4AC1-4D7A-94B5-33C20C0DDD66}</ProjectGUID>
+    <ProjectGUID>{7CC68E88-720D-41F4-8973-02843A85243E}</ProjectGUID>
     <Keyword>Win32Proj</Keyword>
     <Platform>Win32</Platform>
     <ProjectName>ALL_BUILD</ProjectName>
@@ -211,22 +211,22 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="C:/Development/project/sfml/opengl-experiments/Projects/build-vs-2013/projects/Engine/Engine.vcxproj">
-      <Project>5F48CF34-C01D-4B96-B691-E24D335BFE44</Project>
+      <Project>8146F1F4-65B4-4AA4-9131-3DBC8E31A1F8</Project>
     </ProjectReference>
     <ProjectReference Include="C:/Development/project/sfml/opengl-experiments/Projects/build-vs-2013/projects/HelloWorld/HelloWorld.vcxproj">
-      <Project>A0688F19-2D50-4FE4-9BAF-C9EDAB9EF187</Project>
+      <Project>5395D439-2CD9-413F-A053-53C067E1894F</Project>
     </ProjectReference>
     <ProjectReference Include="C:/Development/project/sfml/opengl-experiments/Projects/build-vs-2013/projects/ModelLoading/ModelLoading.vcxproj">
-      <Project>C9C561F7-FAC5-4A65-89CD-AB3D294C599A</Project>
+      <Project>11EB9059-8992-4F5C-9CA1-C4B9A5995897</Project>
     </ProjectReference>
     <ProjectReference Include="C:/Development/project/sfml/opengl-experiments/Projects/build-vs-2013/projects/OGLdev_3/OGLdev_3.vcxproj">
-      <Project>19207CDB-1E79-4D1E-AE74-6119522F539F</Project>
+      <Project>EB6C9CB0-2D7E-4AA2-9F7B-9D970127C908</Project>
     </ProjectReference>
     <ProjectReference Include="C:/Development/project/sfml/opengl-experiments/Projects/build-vs-2013/PlaneProject.vcxproj">
-      <Project>997CF949-DE64-45D7-814A-0B4DF356D8B8</Project>
+      <Project>57D3F1E4-8C69-4584-8EE3-E5A4F7DD705D</Project>
     </ProjectReference>
     <ProjectReference Include="C:/Development/project/sfml/opengl-experiments/Projects/build-vs-2013/ZERO_CHECK.vcxproj">
-      <Project>12329108-E575-4265-B494-F736545974E4</Project>
+      <Project>137A5B9F-3965-4744-9C9C-AA23559566E3</Project>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

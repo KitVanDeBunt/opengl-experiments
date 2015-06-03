@@ -1,2 +1,4 @@
 # CMake generation dependency list for this directory.
 C:/Development/project/sfml/opengl-experiments/Projects/source/projects/Engine/CMakeLists.txt
+C:/Development/project/sfml/opengl-experiments/Projects/source/projects/Engine/Assets/Shaders/shader.fs.txt
+C:/Development/project/sfml/opengl-experiments/Projects/source/projects/Engine/Assets/Shaders/shader.vs.txt
