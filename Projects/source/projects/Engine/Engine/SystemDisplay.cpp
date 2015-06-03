@@ -185,16 +185,14 @@ namespace KECS{
 		spriteScale = trans->scale();
 		//glTranslatef(spritePos.x, spritePos.y, spritePos.z);
 
-		static float ScaleSize = 0.025;
-
 		float RadianRotation = KECS::Common::ToRadian(spriteRot.z);
 	
 		// Z transform and scale matrix
 		KECS::Utils::Matrix4f ScaleEnTrans;
-		ScaleEnTrans.m[0][0] = sinf(ScaleSize);		ScaleEnTrans.m[0][1] = 0.0f;				ScaleEnTrans.m[0][2] = 0.0f;				ScaleEnTrans.m[0][3] = (spritePos.x / (width/2));
-		ScaleEnTrans.m[1][0] = 0.0f;				ScaleEnTrans.m[1][1] = sinf(ScaleSize);		ScaleEnTrans.m[1][2] = 0.0f;				ScaleEnTrans.m[1][3] = (spritePos.y / (height/2));
-		ScaleEnTrans.m[2][0] = 0.0f;				ScaleEnTrans.m[2][1] = 0.0f;				ScaleEnTrans.m[2][2] = sinf(ScaleSize);		ScaleEnTrans.m[2][3] = (spritePos.z / 200.0);
-		ScaleEnTrans.m[3][0] = 0.0f;				ScaleEnTrans.m[3][1] = 0.0f;				ScaleEnTrans.m[3][2] = 0.0f;				ScaleEnTrans.m[3][3] = 1.0f;
+		ScaleEnTrans.m[0][0] = sinf(spriteScale.x / height);		ScaleEnTrans.m[0][1] = 0.0f;													ScaleEnTrans.m[0][2] = 0.0f;							ScaleEnTrans.m[0][3] = (spritePos.x / (width / 2));
+		ScaleEnTrans.m[1][0] = 0.0f;							ScaleEnTrans.m[1][1] = sinf((sinf(width * ((spriteScale.y / height) / height))));	ScaleEnTrans.m[1][2] = 0.0f;							ScaleEnTrans.m[1][3] = (spritePos.y / (height / 2));
+		ScaleEnTrans.m[2][0] = 0.0f;							ScaleEnTrans.m[2][1] = 0.0f;													ScaleEnTrans.m[2][2] = sinf(spriteScale.z / height);	ScaleEnTrans.m[2][3] = (spritePos.z / 200.0);
+		ScaleEnTrans.m[3][0] = 0.0f;							ScaleEnTrans.m[3][1] = 0.0f;													ScaleEnTrans.m[3][2] = 0.0f;							ScaleEnTrans.m[3][3] = 1.0f;
 
 		// Z rotateion matrix
 		KECS::Utils::Matrix4f Rot;

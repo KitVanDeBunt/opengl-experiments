@@ -85,7 +85,7 @@ int main(int, const char**)
 	Engine engine;
 
 	// create systems
-	SystemDisplay *display = new SystemDisplay(960.0, 720.0, "Engine: Hello World");
+	SystemDisplay *display = new SystemDisplay(1280.0, 720.0, "Engine: Hello World");
 
 	// add systems to engine
 	engine.AddSystem(display);
@@ -96,12 +96,12 @@ int main(int, const char**)
 	player->AddComponent(componentPlayer);
 	engine.AddEntity(player);
 
-	for (int i = 0; i < 21; i++){
+	for (int i = 0; i < 30; i++){
 		for (int j = 0; j < 16; j++){
 			// create npc
 			Entity *npc1 = new Entity();
 			ComponentTransform *npcTransform = new ComponentTransform();
-			npcTransform->position(sf::Vector3f((-400.0f + (40.0f*i)), (-300.0f + (40.0f*j)), 0));
+			npcTransform->position(sf::Vector3f((-580.0f + (40.0f*i)), (-300.0f + (40.0f*j)), 0));
 			npcTransform->scale(sf::Vector3f(15.0f, 15, 10));
 			npc1->AddComponent(npcTransform);
 			npc1->AddComponent(new ComponentSprite());
