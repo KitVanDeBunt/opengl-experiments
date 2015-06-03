@@ -29,13 +29,24 @@ set(SRCFILES ${SRCFILES} ${SRCROOT}/Engine/SystemInput.h)
 set(SRCFILES ${SRCFILES} ${SRCROOT}/Engine/Vector2.cpp)
 set(SRCFILES ${SRCFILES} ${SRCROOT}/Engine/Vector2.h)
 
-set(SRCFILES ${SRCFILES} ${SRCROOT}/Engine/Utils/EngineTime.cpp)
-set(SRCFILES ${SRCFILES} ${SRCROOT}/Engine/Utils/EngineTime.h)
-
 set(SRCFILES ${SRCFILES} ${SRCROOT}/Engine/Vector3.cpp)
 set(SRCFILES ${SRCFILES} ${SRCROOT}/Engine/Vector3.h)
 
 set(SRCFILES ${SRCFILES} ${SRCROOT}/Engine/KECS.h)
+
+# - engine utils source filse
+set(SRCFILES ${SRCFILES} ${SRCROOT}/Engine/Utils/EngineTime.cpp)
+set(SRCFILES ${SRCFILES} ${SRCROOT}/Engine/Utils/EngineTime.h)
+
+set(SRCFILES ${SRCFILES} ${SRCROOT}/Engine/Utils/Common.cpp)
+set(SRCFILES ${SRCFILES} ${SRCROOT}/Engine/Utils/Common.h)
+
+set(SRCFILES ${SRCFILES} ${SRCROOT}/Engine/Utils/OpenGLUtil.cpp)
+set(SRCFILES ${SRCFILES} ${SRCROOT}/Engine/Utils/OpenGLUtil.h)
+
+# - shader source files
+# set(SRCFILES ${SRCFILES} ${SRCROOT}/Assets/Shaders/shader.fs.txt)
+# set(SRCFILES ${SRCFILES} ${SRCROOT}/Assets/Shaders/shader.vs.txt)
 
 # - game source files
 set(SRCFILES ${SRCFILES} ${SRCROOT}/ComponentPlayer.cpp)
@@ -45,6 +56,8 @@ set(SRCFILES ${SRCFILES} ${SRCROOT}/ComponentEnemy.cpp)
 set(SRCFILES ${SRCFILES} ${SRCROOT}/ComponentEnemy.h)
 
 set(SRCFILES ${SRCFILES} ${SRCROOT}/main.cpp)
+
+
 #set(SRCFILES ${SRCROOT}/main.h)
 
 #file(GLOB SRCFILES
@@ -52,8 +65,15 @@ set(SRCFILES ${SRCFILES} ${SRCROOT}/main.cpp)
  #  "${SRCROOT}/*.cpp"
 #)
 
+
+configure_file(${SRCROOT}/Assets/Shaders/shader.fs.txt shader.fs.txt COPYONLY)
+configure_file(${SRCROOT}/Assets/Shaders/shader.vs.txt shader.vs.txt COPYONLY)
+
+#configure_file(${SRCROOT}/Assets/Shaders/shader.fs.txt ../../../bin/Debug/shader.fs.txt COPYONLY)
+#configure_file(${SRCROOT}/Assets/Shaders/shader.vs.txt ../../../bin/Debug/shader.vs.txt COPYONLY)
+
 # Define sources and executable
-set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ../../../bin)
+# set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ../../../bin)
 set(EXECUTABLE_NAME "Engine")
 add_executable(${EXECUTABLE_NAME} ${SRCFILES})
 

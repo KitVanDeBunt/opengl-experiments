@@ -29,7 +29,7 @@ namespace KECS{
 
 	void Engine::AddSystem(SystemBase *newSystem)
 	{
-		cout << systems << endl;
+		cout << "[Engine] system: " << systems << endl;
 		if (systems == NULL){
 			cout << "[Engine] First system added" << endl;
 			systems = new SystemBase*[1];
@@ -64,7 +64,7 @@ namespace KECS{
 
 	void Engine::AddEntity(Entity *newEntity)
 	{
-		cout << entitys << endl;
+		//cout << "[Engine] entitys: " << entitys << endl;
 		if (entitys == NULL){
 			//cout << "[Engine] First entity added" << endl;
 			entitys = new Entity*[1];
@@ -106,32 +106,15 @@ namespace KECS{
 	bool Engine::Update()
 	{
 		EngineTime::CalculateDeltaTime();
-		/*
-		for (int i = 0; i < entityCount; i++){
-		if (entitys != NULL){
-		ComponentBase *test = entitys[i]->GetComponent(ID_COMPONENT_SPRITE);
-		if (test != NULL){
-		std::cout << "[Display System] test test test n" << i << " contains a test component" << std::endl;
-		}
 
-		ComponentSprite *sprite = (ComponentSprite*)entitys[i]->GetComponent(ID_COMPONENT_SPRITE);
-		if (sprite != NULL){
-		std::cout<< "[Display System] entity n" << i << " contains a sprite component" << std::endl;
-		}
-		ComponentTransform *transform = (ComponentTransform*)entitys[i]->GetComponent(ID_COMPONENT_TRANSFORM);
-		if (transform != NULL){
-		std::cout << "[Display System] entity n" << i << " contains a transform component" << std::endl;
-		}
-		}
-		else{
-		std::cout << "[Display System] entity NULL" << std::endl;
-		}
-		}
-		*/
-		//cout << "[Engine] Update - system count:" << systemCount << endl;
+		// cout << "[Engine] Update - system count:" << systemCount << endl;
+
+		// update systems
 		for (int i = 0; i < systemCount; ++i){
 			systems[i]->Update();
 		}
+
+		// update entitys
 		for (int i = 0; i < entityCount; ++i){
 			entitys[i]->Update();
 		}

@@ -16,7 +16,7 @@ namespace KECS{
 
 	void Entity::AddComponent(ComponentBase *newComponent){
 		newComponent->AddToParent(this);
-		cout << components << endl;
+		//cout << "[Entity] components: " << components << endl;
 		if (components == NULL){
 			// cout << "[Entity] First component added" << endl;
 			components = new ComponentBase*[1];
@@ -32,21 +32,16 @@ namespace KECS{
 			components[componentCount] = newComponent;
 			componentCount++;
 
-			// delete temp data
-			for (int i = 0; i < componentCount - 1; ++i){
-				//delete temp[i];
-			}
 			// delete temp
 			delete temp;
 		}
 		newComponent->Init();
-		// TODO cout << "[Entity] new component name:" << endl;
 		// cout << "[Entity] component count:" << componentCount << endl;
 	}
 
 	ComponentBase* Entity::GetComponent(std::string classID){
 		if (components != NULL){
-			for (int i = 0; i < componentCount; ++i){
+			for (i = 0; i < componentCount; ++i){
 				if (components[i]->getComponentID() == classID){
 					return components[i];
 				}

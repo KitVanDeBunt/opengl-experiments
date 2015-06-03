@@ -14,7 +14,7 @@ namespace KECS{
 	class SystemDisplay : public SystemBase
 	{
 	public:
-		SystemDisplay();
+		SystemDisplay(GLdouble width, GLdouble height, sf::String newWindowTitle);
 		~SystemDisplay();
 
 		virtual void Update()override;
@@ -24,19 +24,24 @@ namespace KECS{
 
 	private:
 		void DrawSprite(ComponentSprite*, ComponentTransform*);
+		void UpdateSpriteList();
 
 		sf::Window *window;
 
-		const int SCREEN_WIDTH = 1280;
-		const int SCREEN_HEIGHT = 720;
+		sf::String windowTitle;
+
+		GLuint vertexbuffer;
+		GLdouble width, height;
+
 		GLdouble fW, fH;
 
 		//loop variables
-		ComponentSprite *sprite;
-		ComponentTransform *transform;
+		//ComponentBase *sprite;
+		//ComponentBase *transform;
 
-
-		Entity **entitysTemp;
+		ComponentSprite **sprites;
+		ComponentTransform **transforms;
+		//Entity **entitysTemp;
 	};
 }
 #endif

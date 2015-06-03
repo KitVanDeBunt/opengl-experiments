@@ -7,6 +7,8 @@
 namespace KECS{
 	class ComponentBase;
 	class Entity{
+
+	// TODO : add name
 	public:
 		Entity();
 		~Entity();
@@ -14,9 +16,9 @@ namespace KECS{
 		ComponentBase* GetComponent(std::string);
 		virtual void Update();
 	private:
-		//Compement conmponents;
 		int componentCount = 0;
 		ComponentBase **components;
+		int i;
 	};
 }
 #endif

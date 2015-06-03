@@ -24,7 +24,7 @@ void ComponentPlayer::Init(){
 	_parentEntity->AddComponent(playerTransform);
 
 	// set initial player transform 
-	playerTransform->scale(sf::Vector3f(40.0f, 40.0f, 40.0f));
+	playerTransform->scale(sf::Vector3f(25.0f, 25.0f, 25.0f));
 }
 
 void ComponentPlayer::Update(){

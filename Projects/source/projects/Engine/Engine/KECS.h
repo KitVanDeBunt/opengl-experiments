@@ -1,6 +1,10 @@
 #ifndef H_KECS
 #define H_KECS
 
+#include <GL\glew.h>
+#include <SFML\OpenGL.hpp>
+
+#include <glm\glm.hpp>
 #include "Engine.h"
 #include "Entity.h"
 
@@ -13,5 +17,9 @@
 #include "SystemInput.h"
 
 #include "Utils\EngineTime.h"
+
+#include "Utils\OpenGLUtil.h"
+#include "Utils\Common.h"
+
 
 #endif
